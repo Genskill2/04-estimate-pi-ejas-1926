@@ -41,15 +41,15 @@ int main(void) {
 
 float mc_pi(int n)
 {
-  int i=0,j=0;
-  while(i<n)
+  int j=0;
+  for(i=0;i<n;i++)
   {float x=frandom();
    float y=frandom();
    float d=(x)*(x)+(y)*(y);
    if(d<1.0)
    {j++;
    }
-   i++;
+ 
    }
   float w=4*((float)j/(float)n);
   
